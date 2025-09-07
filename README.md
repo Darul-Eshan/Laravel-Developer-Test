@@ -28,6 +28,8 @@ How I Did It
     3.Handled errors and fixed issues with guidance from ChatGPT and Laravel documentation.
     4.Emphasized clean code practices for maintainability.
 
-Note: I wrote most of the code independently, ensuring that I can fully explain every part of it.
-Some minor error fixes were assisted with ChatGPT. This assignment helped me strengthen both my coding 
-skills and understanding of Laravel project structure.
+Note:
+
+    I wrote most of the code independently, ensuring that I can fully explain every part of it.
+    Some minor error fixes were assisted with ChatGPT. This assignment helped me strengthen both my coding 
+    skills and understanding of Laravel project structure.
