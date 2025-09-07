@@ -19,7 +19,8 @@ What I Did
 
     7.Applied middleware for security and user access control.    
 
-    How I Did It
+How I Did It
+
     1.Used Laravel Blade templates for the frontend layout.
     2.Defined foreign key relationships in the database to ensure proper hierarchy:
         State belongs to Country.
@@ -27,4 +28,6 @@ What I Did
     3.Handled errors and fixed issues with guidance from ChatGPT and Laravel documentation.
     4.Emphasized clean code practices for maintainability.
 
-    Note: I wrote most of the code independently, ensuring that I can fully explain every part of it. Some minor error fixes were assisted with ChatGPT. This assignment helped me strengthen both my coding skills and understanding of Laravel project structure.
+Note: I wrote most of the code independently, ensuring that I can fully explain every part of it.
+Some minor error fixes were assisted with ChatGPT. This assignment helped me strengthen both my coding 
+skills and understanding of Laravel project structure.
