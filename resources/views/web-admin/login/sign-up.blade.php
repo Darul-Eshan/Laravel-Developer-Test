@@ -50,46 +50,52 @@
                 </div>
                 <div class="loginForm__wrapper mt-4">
                     <!-- Form -->
-                    <form action="{{route('register')}}" class="custom_form">
+                    <form action="{{ route('register') }}" method="POST" class="custom_form">
+                        @csrf
+
                         <div class="single_input">
                             <label class="label_title">Name</label>
                             <div class="include_icon">
-                                <input class="form--control radius-5" name="name" type="name" placeholder="Enter your Full Name">
+                                <input class="form--control radius-5" name="name" type="text" placeholder="Enter your Full Name" required>
                                 <div class="icon"><span class="material-symbols-outlined">person</span></div>
                             </div>
                         </div>
+
                         <div class="single_input">
                             <label class="label_title">Email</label>
                             <div class="include_icon">
-                                <input class="form--control radius-5" type="email" name="email" placeholder="Enter your email address">
+                                <input class="form--control radius-5" type="email" name="email" placeholder="Enter your email address" required>
                                 <div class="icon"><span class="material-symbols-outlined">mail</span></div>
                             </div>
                         </div>
+
                         <div class="single_input">
                             <label class="label_title">Password</label>
                             <div class="include_icon">
-                                <input class="form--control radius-5" name="password" type="password" placeholder="Enter your password">
+                                <input class="form--control radius-5" name="password" type="password" placeholder="Enter your password" required>
                                 <div class="icon"><span class="material-symbols-outlined">lock</span></div>
                             </div>
                         </div>
+
                         <div class="single_input">
                             <label class="label_title">Confirm Password</label>
                             <div class="include_icon">
-                                <input class="form--control radius-5"  type="password" placeholder="confirm password">
+                                <input class="form--control radius-5" name="password_confirmation" type="password" placeholder="Confirm password" required>
                                 <div class="icon"><span class="material-symbols-outlined">lock</span></div>
                             </div>
                         </div>
+
                         <div class="btn_wrapper single_input">
-                            <button href="" type="submit" class="cmn_btn w-100 radius-5">Sign Up</button>
+                            <button type="submit" class="cmn_btn w-100 radius-5">Sign Up</button>
                         </div>
+
                         <div class="btn-wrapper mt-4">
-                            <p class="loginForm__wrapper__signup"><span>Already have an Account?  </span> <a href="sign_in.html" class="loginForm__wrapper__signup__btn">Sign In</a></p>
-                            <div class="loginForm__wrapper__another d-flex flex-column gap-2 mt-3">
-                                <a href="javascript:void(0)"  type="submit" class="loginForm__wrapper__another__btn radius-5 w-100"><img src="{{asset('web-assets')}}/assets/img/icon/googleIocn.svg" alt="" class="icon"> Login With Google</a>
-                                <a href="javascript:void(0)" class="loginForm__wrapper__another__btn radius-5 w-100"><img src="{{asset('web-assets')}}/assets/img/icon/fbIcon.svg" alt="" class="icon">Login With Facebook</a>
-                            </div>
+                            <p class="loginForm__wrapper__signup"><span>Already have an Account?  </span>
+                                <a href="{{ route('login') }}" class="loginForm__wrapper__signup__btn">Sign In</a>
+                            </p>
                         </div>
                     </form>
+
                 </div>
             </div>
         </div>
