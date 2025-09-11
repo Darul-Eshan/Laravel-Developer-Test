@@ -33,3 +33,6 @@ Note:
     I wrote most of the code independently, ensuring that I can fully explain every part of it.
     Some minor error fixes were assisted with ChatGPT. This assignment helped me strengthen both my coding 
     skills and understanding of Laravel project structure.
+
+    
+![Profile views](https://komarev.com/ghpvc/?username=Darul-Eshan&color=blue)
